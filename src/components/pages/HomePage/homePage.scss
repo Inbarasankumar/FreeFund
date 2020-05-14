@@ -1,0 +1,97 @@
+// @import '../../assets/img/homePageLaptop.jpg';
+.content-1 {
+    margin: 25px 0;
+    border-bottom: solid 1px #e8e8e8;
+
+    .content-1-heading {
+        font-family: SourceSansPro;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 0.95;
+        text-align: center;
+        color: #000000;
+    }
+
+    p{
+        font-family: SourceSansPro;
+        font-size: 20px;
+        line-height: 1;
+        text-align: center;
+        color: #000000;
+    }
+
+    .content-1-button {
+        border: solid 1px #0040d5;
+        background-color: #ffffff;
+        font-family: SourceSansPro;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 2.11;
+        text-align: center;
+        color: #0040d5;
+        margin-left: 250px;
+        padding: 0 30px;
+    }
+
+    img {
+        width: 750px;
+        height: 500px;
+        margin-left: -25px;
+    }
+}
+
+.content-2 {
+    margin: 25px 0;
+    // border-bottom: solid 1px #e8e8e8;
+
+    .content-2-heading {
+        font-family: SourceSansPro;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 0.95;
+        text-align: center;
+        color: #0040d5;
+    }
+}
+
+.content-3 {
+    border-bottom: solid 1px #e8e8e8;
+    background-image: url('../../assets/img/group.png');
+    background-size: cover;
+    background-size: 100% 100%;
+    // min-height: 500px;
+
+    .content-3-heading {
+        font-family: SourceSansPro;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 0.95;
+        color: #ffffff;
+        margin: 25px 0;
+        text-align: center;
+    }
+
+    .store-icon {
+        font-size: 120px;
+        color: white;
+        border-radius: 50%;
+        border: solid 5px white;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .content-3-icon {
+        font-size: 30px;
+        color: white;
+        border-radius: 50%;
+        border: solid 2px white;
+        margin: 20px;
+        padding: 5px;
+    }
+
+    .content-3-icon-text {
+        font-size: 30px;
+        line-height: 1.27;
+        color: #ffffff;
+    }
+}

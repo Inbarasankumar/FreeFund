@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import HomePage from '../src/components/pages/HomePage';
+import HomePage from './components/pages/HomePage';
+import 'antd/dist/antd.css';
 
 ReactDOM.render(
    <BrowserRouter>
