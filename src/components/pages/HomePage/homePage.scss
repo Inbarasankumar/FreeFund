@@ -111,9 +111,59 @@
         text-align: center;
     }
 
-    img {
-        width: 300px;
-        height: 250px;
-        object-fit: contain;
+    .user-type-list {
+        margin: 50px 0;
+
+        .user-type-heading {
+            font-family: Eina03☞;
+            font-weight: bold;
+            line-height: 0.97;
+            text-align: center;
+            color: #000000;
+        }
+
+        img {
+            width: 115px;
+            height: 115px;
+            object-fit: contain;
+            margin: 50px 100px;
+        }
+
+        p {
+            font-family: Eina03☞;
+            font-weight: bold;
+            line-height: 1.58;
+            text-align: left;
+            color: #999dac;
+        }
+
+        .select-button {
+            border-radius: 12px;
+            background-color: #1f57da;
+            border: none;
+            font-family: Eina03☞;
+            font-weight: bold;
+            line-height: 1.58;
+            color: #ffffff;
+            margin: 30px 75px;
+            padding: 10px 40px;
+        }
+    }
+}
+
+.content-5 {
+    margin: 25px 0;
+
+    .content-5-heading {
+        font-family: SourceSansPro;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 0.95;
+        color: #0040d5;
+        text-align: center;
+    }
+
+    .carousel-view {
+        margin: 50px;
     }
 }
