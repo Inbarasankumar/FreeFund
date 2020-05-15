@@ -12,6 +12,10 @@ const images = {
     location: require('./img/location.png'),
     editTools: require('./img/edit-tools.png'),
     business: require('./img/business-and-finance.png'),
+    code: require('./img/laptop-code.jpg'),
+    map: require('./img/mobile-map.png'),
+    music: require('./img/music.png'),
+    system: require('./img/music-system.png')
 };
 
 export default images;
