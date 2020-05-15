@@ -27,20 +27,20 @@ class HomePage extends Component {
                         <h1 className="content-2-heading">Find top Freelancers</h1>
                         <Row justify="center">
                             <Col span={7} className="border-heading">
-                                <img src={Images.computer}/>
+                                <img src={Images.computer} alt="computer" />
                                 <h6 className="heading-images">Web Design/Develop</h6>
                                 <p className="description-tag">Web design encompasses many different skills and
                                     disciplines in the production and maintenance of websites.</p>
                             </Col>
                             <Col span={7} className="border-heading">
-                                <img src={Images.appdesign}/>
+                                <img src={Images.appdesign} alt="appdesign" />
                                 <h6 className="heading-images">App Design</h6>
                                 <p className="description-tag">
                                     App design encompasses both the user interface (UI) and user experience (UX). Designers are responsible for the overall style of the app, including things like the colour scheme, font selection, and the types of buttons and widgets the user will use.
                                 </p>
                             </Col>
                             <Col span={7} className="border-heading">
-                                <img src={Images.appdevelopment}/>
+                                <img src={Images.appdevelopment} alt="appdevelopment"/>
                                 <h6 className="heading-images">App Development</h6>
                                 <p className="description-tag">Mobile app development is the act or process by which a
                                     mobile app is developed for mobile devices, such as personal digital assistants,
@@ -49,7 +49,7 @@ class HomePage extends Component {
                         </Row>
                         <Row justify="center">
                             <Col span={7} className="border-heading">
-                                <img src={Images.graphic}/>
+                                <img src={Images.graphic} alt="graphic" />
                                 <h6 className="heading-images">Graphic Design</h6>
                                 <p className="description-tag">
                                     Graphic design is the process of visual communication and problem-solving through
@@ -57,7 +57,7 @@ class HomePage extends Component {
                                 </p>
                             </Col>
                             <Col span={7} className="border-heading">
-                                <img src={Images.interfaceUi}/>
+                                <img src={Images.interfaceUi} alt="interfaceUi" />
                                 <h6 className="heading-images">Interface Design</h6>
                                 <p className="description-tag">
                                     User interface design or user interface engineering is the design of user interfaces
@@ -67,7 +67,7 @@ class HomePage extends Component {
                                 </p>
                             </Col>
                             <Col span={7} className="border-heading">
-                                <img src={Images.threeDesign}/>
+                                <img src={Images.threeDesign} alt="threeDesign" />
                                 <h6 className="heading-images">3D Design</h6>
                                 <p className="description-tag">
                                     3D computer graphics, or three-dimensional computer graphics, are graphics that use
