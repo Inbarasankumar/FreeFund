@@ -8,9 +8,15 @@ import Images from "../assets/images";
  import CardDetail from '../common/CardDetail';
 
 class Promotions extends Component {
+<<<<<<< HEAD
+    state={
+        nextStep : 4,
+        disable : false,
+=======
     state = {
         nextStep: 0,
         disable: false,
+>>>>>>> 0174b2651b3a28923e93cf293ba8c0c4291b4367
     }
     handleOnClick = () => {
         // this.setState((state,props)=>({nextStep:state.nextStep+1 , disable:true}));

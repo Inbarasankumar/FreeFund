@@ -23,12 +23,15 @@ class Overview extends Component{
         }
 
        
-    handleOnClick = (e) =>{
+    handleOnClick = () =>{
+        
         console.log('handle click state')
-        this.setState({nextStep:1 , disable:true});
+        // this.setState(state=>{ return {
+        //     nextStep:state.nextStep+1 , disable:true}},() => {
+        //     this.props.history.push('/funding');});
         this.props.history.push('/funding');
         //this.setState({disable:true})
-        console.log(this.state)
+       
     }
     handleOnChange=(e)=>{
         this.setState({
@@ -47,7 +50,7 @@ class Overview extends Component{
                   <div className="water-text">65% projects are highly funded by this content</div>
                 </Col>
                 <Col span={8} >
-                <Button type="primary" disabled={this.state.disable} onClick={()=>this.handleOnClick()}>Next:Funding</Button>
+                <Button type="primary"  onClick={this.handleOnClick}>Next:Funding</Button>
                    
                 </Col>
             </Row>
