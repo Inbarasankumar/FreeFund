@@ -15,7 +15,9 @@ const images = {
     code: require('./img/laptop-code.jpg'),
     map: require('./img/mobile-map.png'),
     music: require('./img/music.png'),
-    system: require('./img/music-system.png')
+    system: require('./img/music-system.png'),
+    google: require('./img/google.png'),
+    facebook: require('./img/facebook.png')
 };
 
 export default images;
