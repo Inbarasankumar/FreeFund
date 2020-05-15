@@ -4,7 +4,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 import Wrapper from './wrapper/wrapper';
-
+import 'antd/dist/antd.css';
 ReactDOM.render(
    <Wrapper></Wrapper>,
   document.getElementById('root')
