@@ -8,11 +8,13 @@ const Header = () => (
     <>
       <Row className="header container-fluid" align="middle">
           <Col span={3}>
-          <img src={Images.freefundLogo} alt="freefundLogo"/>
+            <a href="/home">
+              <img src={Images.freefundLogo} alt="freefundLogo"/>
+            </a>
           </Col>
           <Col span={9}>
-              <Link className="header-link">Browse projects</Link>
-              <Link className="header-link">My Projects</Link>
+              <Link to={'/browseprojects'} className="header-link">Browse projects</Link>
+              <Link to={'/myprojects'} className="header-link">My Projects</Link>
               <Link className="header-link">Portfolio</Link>
           </Col>    
           <Col span={4} offset={8}>

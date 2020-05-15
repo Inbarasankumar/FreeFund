@@ -26,8 +26,8 @@ const blogData = [
 ];
 
 const Footer = () => (
-    <>
-        <Row className="footer container-fluid">
+    <div className="footer container-fluid">
+        <Row className="footer-content">
             <Col span={8}>
                 <img src={Images.freefundLogo} alt="freefundLogo"/>
                 <p className="copy-right">
@@ -60,7 +60,7 @@ const Footer = () => (
                 <LinkedinFilled className="footer-icons" />
             </Col>
         </Row>
-    </>
+    </div>
 );
 
 export default Footer;
