@@ -85,7 +85,7 @@ class HomePage extends Component {
                                     Lorem Ipsum has been the industry’s 
                                     standard dummy text ever since the 1500s
                                 </p>
-                                <button className="select-button">Live your idea</button>
+                                <button className="select-button">Post a project</button>
                             </Col>
                             <Col span={6}>
                                 <h1 className="user-type-heading">Backers</h1>

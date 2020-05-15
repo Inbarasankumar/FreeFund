@@ -18,7 +18,7 @@ const Header = () => (
               <Link className="header-link">Portfolio</Link>
           </Col>    
           <Col span={4} offset={8}>
-              <button className="header-button">Live your idea</button>
+              <button className="header-button">Post a project</button>
           </Col>         
       </Row>
     </>
