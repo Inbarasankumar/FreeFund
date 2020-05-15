@@ -9,9 +9,10 @@ class Header extends React.Component {
       return (
         <Row className="header container-fluid" align="middle">
             <Col span={3}>
-            <img className="freefund" src={Images.freefundLogo} alt="freefundLogo"/>
-                <Link className="header-title">Freefund</Link>
-                </Col>
+              <Link to='/home'>
+                 <img className="freefund" src={Images.freefundLogo} alt="freefundLogo"/>
+              </Link>  
+            </Col>
             <Col span={9}>
                 <Link to={'/browseprojects'} className="header-link">Browse projects</Link>
                 <Link to={'/myprojects'} className="header-link">My Projects</Link>
