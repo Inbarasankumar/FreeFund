@@ -3,6 +3,7 @@ import {Route,Switch,Redirect} from 'react-router-dom';
 
 import * as path from '../router/urlMapping';
 import HomePage from '../components/pages/HomePage';
+import Overview from '../components/Overview';
 import BrowseProject from "../components/pages/BrowseProject";
 class AppRouter extends Component{
 
@@ -13,6 +14,8 @@ class AppRouter extends Component{
                 <Route exact path={path.HOME}component={HomePage}></Route>
                 <Route exact path={path.BROWSE_PROJECTS}component={BrowseProject}></Route>
                 <Route exact path={path.MY_PROJECT} component={HomePage}></Route>
+                {/* /will be removed later/ */}
+                <Route exact path ="/overview" component={Overview}></Route> 
             </Switch>
         )
     }
