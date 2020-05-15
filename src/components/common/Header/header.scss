@@ -1,0 +1,37 @@
+.header {
+  border-bottom: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  min-height: 80px;
+
+  .logo {
+    color: #3ad3c1;
+  }
+
+  .header-link {
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2.11;
+    color: #000000;
+    margin: 10px;
+  }
+  
+  .header-title {
+    font-family: Eina03☞;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.9;
+    color: #3276d2;
+  }
+  
+  .header-button {
+    background-color: #0040d5;
+    border: none;
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2.11;
+    color: #ffffff;
+    padding: 0 30px;
+  }
+}
