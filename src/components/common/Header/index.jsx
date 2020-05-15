@@ -1,28 +1,25 @@
 import { Row, Col } from 'antd';
-import React, { Component } from 'react';
-import { CopyFilled } from '@ant-design/icons';
+import React from 'react';
+import Images from '../../assets/images';
 import { Link } from 'react-router-dom';
 import './header.scss';
 
-class Header extends Component {
-  render() {
-      return (
-        <Row className="header container-fluid" align="middle">
-            <Col span={3}>
-                <CopyFilled className="logo" />
-                <Link className="header-title">Freefund</Link>
-                </Col>
-            <Col span={9}>
-                <Link className="header-link">Browse projects</Link>
-                <Link className="header-link">My Projects</Link>
-                <Link className="header-link">Portfolio</Link>
-            </Col>    
-            <Col span={4} offset={8}>
-                <button className="header-button">Post a project</button>
-            </Col>         
-        </Row>
-      );
-  }
-}
+const Header = () => (
+    <>
+      <Row className="header container-fluid" align="middle">
+          <Col span={3}>
+          <img src={Images.freefundLogo} alt="freefundLogo"/>
+          </Col>
+          <Col span={9}>
+              <Link className="header-link">Browse projects</Link>
+              <Link className="header-link">My Projects</Link>
+              <Link className="header-link">Portfolio</Link>
+          </Col>    
+          <Col span={4} offset={8}>
+              <button className="header-button">Live your idea</button>
+          </Col>         
+      </Row>
+    </>
+);
 
 export default Header;

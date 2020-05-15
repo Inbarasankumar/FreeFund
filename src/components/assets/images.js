@@ -6,7 +6,12 @@ const images = {
     uidev: require('./img/ui-dev.png'),
     ui: require('./img/ui.png'),
     quality: require('./img/quality.png'),
-    customerPic: require('./img/the-gifted-amy-acker-02.png')
+    customerPic: require('./img/the-gifted-amy-acker-02.png'),
+    freefundLogo: require('./img/freefundLogo.svg'),
+    quotation: require('./img/quotation-png-right-double-quotation-mark-512.png'),
+    location: require('./img/location.png'),
+    editTools: require('./img/edit-tools.png'),
+    business: require('./img/business-and-finance.png'),
 };
 
 export default images;
