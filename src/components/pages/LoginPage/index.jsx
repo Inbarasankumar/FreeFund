@@ -6,11 +6,6 @@ import './loginPage.scss';
 import { Link } from 'react-router-dom';
 
 class LoginTab extends React.Component {
-
-    navigateToBrowsePage = () => {
-        this.props.history.push('/browseprojects');
-    }
-
   render() {
     return (
       <div>
@@ -28,7 +23,7 @@ class LoginTab extends React.Component {
                             Continue with Facebook
                         </span>
                     </button>
-                    <button onClick={this.navigateToBrowsePage} className="sign-in">
+                    <button className="sign-in">
                         <GoogleOutlined className="button-logo" />
                         <span className="button-name">
                             Continue with Google

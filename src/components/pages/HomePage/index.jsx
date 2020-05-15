@@ -186,21 +186,20 @@ class HomePage extends Component {
                         </div>
                     </Col>
                 </Row>
-                (this.state.isVisible? (
-                    <div className="modal-display">
-                    <Modal
-                        closable={false}
-                        className="login-modal"
-                        centered={true}
-                        visible={this.state.isVisible}
-                        footer={null}
-                        onCancel={this.handleCancel}
-                    >
-                        <LoginTab />
-                    </Modal>
-                  </div>
-                ): null
-            )                
+                <div className="modal-display">
+                {this.state.isVisible ? (
+                <Modal
+                    closable={false}
+                    className="login-modal"
+                    centered={true}
+                    visible={this.state.isVisible}
+                    footer={null}
+                    onCancel={this.handleCancel}
+                >
+                    <LoginTab />
+                </Modal>
+                ): null}
+                </div>
             </>
         );
     }
