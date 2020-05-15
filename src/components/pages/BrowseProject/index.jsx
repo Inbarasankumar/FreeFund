@@ -29,15 +29,9 @@ class BrowseProject extends Component {
                     </Col>
                     <Col span={8} offset={2}>
                         <h1 className="headings">Recently Incubated </h1>
-                        <div>
-                            <Description/>
-                        </div>
-                        <div>
-                            <Description/>
-                        </div>
-                        <div>
-                            <Description/>
-                        </div>
+                        <div><Description displayPic={Images.map}/></div>
+                        <div><Description displayPic={Images.music}/></div>
+                        <div><Description displayPic={Images.system}/></div>
                     </Col>
                 </Row>
                 <Row>
@@ -45,14 +39,14 @@ class BrowseProject extends Component {
                         <h1 className="headings">Technology</h1>
                     </Col>
                     <Col span={8} offset={2}>
-                        <div><Description/></div>
-                        <div><Description/></div>
-                        <div><Description/></div>
+                        <div><Description displayPic={Images.map}/></div>
+                        <div><Description displayPic={Images.music}/></div>
+                        <div><Description displayPic={Images.system}/></div>
                     </Col>
                     <Col span={8} offset={2}>
-                        <div><Description/></div>
-                        <div><Description/></div>
-                        <div><Description/></div>
+                        <div><Description displayPic={Images.map}/></div>
+                        <div><Description displayPic={Images.music}/></div>
+                        <div><Description displayPic={Images.system}/></div>
                     </Col>
                 </Row>
                 <Row>
@@ -60,14 +54,14 @@ class BrowseProject extends Component {
                         <h1 className="headings">Finance</h1>
                     </Col>
                     <Col span={8} offset={2}>
-                        <div><Description/></div>
-                        <div><Description/></div>
-                        <div><Description/></div>
+                        <div><Description displayPic={Images.system}/></div>
+                        <div><Description displayPic={Images.map}/></div>
+                        <div><Description displayPic={Images.music}/></div>
                     </Col>
                     <Col span={8} offset={2}>
-                        <div><Description/></div>
-                        <div><Description/></div>
-                        <div><Description/></div>
+                        <div><Description displayPic={Images.map}/></div>
+                        <div><Description displayPic={Images.system}/></div>
+                        <div><Description displayPic={Images.music}/></div>
                     </Col>
                 </Row>
             </>

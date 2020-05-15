@@ -15,7 +15,13 @@ const images = {
     code: require('./img/laptop-code.jpg'),
     map: require('./img/mobile-map.png'),
     music: require('./img/music.png'),
-    system: require('./img/music-system.png')
+    system: require('./img/music-system.png'),
+    appdevelopment: require('./img/app-development.png'),
+    graphic: require('./img/graphic.png'),
+    computer: require('./img/computer.png'),
+    interfaceUi: require('./img/Interface.png'),
+    threeDesign: require('./img/3d-design.png'),
+    appdesign: require('./img/app design.svg')
 };
 
 export default images;

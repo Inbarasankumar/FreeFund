@@ -9,10 +9,10 @@ const Header = () => (
       <Row className="header container-fluid" align="middle">
           <Col span={3}>
             <a href="/home">
-              <img src={Images.freefundLogo} alt="freefundLogo"/>
+              <img className="freefund" src={Images.freefundLogo} alt="freefundLogo"/>
             </a>
           </Col>
-          <Col span={9}>
+          <Col span={9} className="header-padding">
               <Link to={'/browseprojects'} className="header-link">Browse projects</Link>
               <Link to={'/myprojects'} className="header-link">My Projects</Link>
               <Link className="header-link">Portfolio</Link>
