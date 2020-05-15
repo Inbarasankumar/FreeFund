@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-import {Row, Col , Button} from 'antd';
+import {Row, Col, Button} from 'antd';
 import StepsHeader from '../stepsHeader';
 import Under from '../../assets/Under Construction.png';
 
 class Recruiting extends Component {
+<<<<<<< HEAD
     state={
         nextStep : 3,
         disable : false,
@@ -12,28 +13,71 @@ class Recruiting extends Component {
     handleOnClick = () =>{
         // this.setState((state,props)=>({nextStep:state.nextStep+1 , disable:true}),() => {
         //     this.props.history.push('/promotions');});
+=======
+    state = {
+        nextStep: 0,
+        disable: false,
+    }
+    handleOnClick = () => {
+        this.setState((state, props) => ({nextStep: state.nextStep + 1, disable: true}));
+>>>>>>> 0174b2651b3a28923e93cf293ba8c0c4291b4367
         this.props.history.push('/promotions');
         console.log(this.state)
     }
-    render(){
-        return(
-            <> 
-            <StepsHeader nextStep={this.state.nextStep}></StepsHeader>   
-            <div className="content">
-      <Row>
-          <Col span={8} offset={8}>
-              
-          </Col>
-          <Col span={8} >
-          <Button onClick={this.handleOnClick}>Next:Promotions</Button>
-             
-          </Col>
-      </Row>
-      <img src={Under} style={{width:'700px',height:'500px', marginLeft:'336px',position:'relative',bottom:'120px'}} alt="Under Contruction"></img>
-         
-        
-          </div>
-          </>
+
+    render() {
+        return (
+            <>
+                <StepsHeader nextStep={this.state.nextStep}></StepsHeader>
+                <div className="content">
+                    <Row>
+                        <Col span={8} offset={8}>
+
+                        </Col>
+                        <Col span={8}>
+                            <Button onClick={this.handleOnClick}>Next:Promotions</Button>
+
+                        </Col>
+                    </Row>
+
+                    <Row>
+                        <Col span={8} offset={1}>
+                            <label>Assigned Budget</label>
+                            <label style={{fontSize: '11.5px'}}>Write a clear, brief title that helps people quickly
+                                understand
+                                the gist of your project.</label>
+                        </Col>
+                        <Col span={10} offset={4}>
+                            <label>Total Budget For Project</label>
+                            <Row>
+                                <Col span={6}>
+                                    <input type="text" name="amount" style={{textAlign: "center"}}
+                                           placeholder="Freefund : Projects get incubated here"
+                                           value={this.state.amount} onChange={this.handleOnChange}></input>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={8} offset={1}>
+                            <label>No of freelancers required</label>
+                            <label style={{fontSize: '11.5px'}}>Write a clear, brief title that helps people quickly
+                                understand
+                                the gist of your project.</label>
+                        </Col>
+                        <Col span={10} offset={4}>
+                            <label>Count</label>
+                            <Row>
+                                <Col span={6}>
+                                    <input type="text" name="amount"
+                                           placeholder="Technology" style={{textAlign: "center"}}
+                                           value={this.state.amount} onChange={this.handleOnChange}></input>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </div>
+            </>
         )
     }
 }
