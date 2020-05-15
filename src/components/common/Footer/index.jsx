@@ -29,7 +29,7 @@ const Footer = () => (
     <div className="footer container-fluid">
         <Row className="footer-content">
             <Col span={8}>
-                <img src={Images.freefundLogo} alt="freefundLogo"/>
+                <img className="freefund" src={Images.freefundLogo} alt="freefundLogo"/>
                 <p className="copy-right">
                     <CopyrightOutlined /> Freefund, 2020
                 </p>
