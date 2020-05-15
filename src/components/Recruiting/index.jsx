@@ -5,7 +5,6 @@ import StepsHeader from '../stepsHeader';
 import Under from '../../assets/Under Construction.png';
 
 class Recruiting extends Component {
-<<<<<<< HEAD
     state={
         nextStep : 3,
         disable : false,
@@ -13,14 +12,6 @@ class Recruiting extends Component {
     handleOnClick = () =>{
         // this.setState((state,props)=>({nextStep:state.nextStep+1 , disable:true}),() => {
         //     this.props.history.push('/promotions');});
-=======
-    state = {
-        nextStep: 0,
-        disable: false,
-    }
-    handleOnClick = () => {
-        this.setState((state, props) => ({nextStep: state.nextStep + 1, disable: true}));
->>>>>>> 0174b2651b3a28923e93cf293ba8c0c4291b4367
         this.props.history.push('/promotions');
         console.log(this.state)
     }
