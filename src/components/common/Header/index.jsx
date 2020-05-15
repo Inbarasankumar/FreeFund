@@ -13,8 +13,8 @@ class Header extends Component {
                 <Link className="header-title">Freefund</Link>
                 </Col>
             <Col span={9}>
-                <Link className="header-link">Browse projects</Link>
-                <Link className="header-link">My Projects</Link>
+                <Link to={'/browseprojects'} className="header-link">Browse projects</Link>
+                <Link to={'/myprojects'} className="header-link">My Projects</Link>
                 <Link className="header-link">Portfolio</Link>
             </Col>    
             <Col span={4} offset={8}>
