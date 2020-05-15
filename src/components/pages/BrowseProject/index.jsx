@@ -18,7 +18,7 @@ class BrowseProject extends Component {
                         <div>
                             <img src={Images.code} alt="laptop" width={400} height={250}/>
                             <Col span={24}>
-                                <div className="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                <div className="description-under">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum has been the industry’s standard dummy text ever since the
                                     1500s my text ever since the 1500s y text of the printing and typesetting
                                     industry. Lorem Ipsum has been the industry’s standard dummy text ever since the
