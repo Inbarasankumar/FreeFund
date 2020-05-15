@@ -6,6 +6,7 @@ const images = {
     uidev: require('./img/ui-dev.png'),
     ui: require('./img/ui.png'),
     quality: require('./img/quality.png'),
+    customerPic: require('./img/the-gifted-amy-acker-02.png')
 };
 
 export default images;

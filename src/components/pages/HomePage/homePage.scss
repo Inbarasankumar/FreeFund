@@ -1,4 +1,8 @@
 // @import '../../assets/img/homePageLaptop.jpg';
+* {
+    box-sizing: border-box;
+}
+
 .content-1 {
     margin: 25px 0;
     border-bottom: solid 1px #e8e8e8;
@@ -42,7 +46,6 @@
 
 .content-2 {
     margin: 25px 0;
-    // border-bottom: solid 1px #e8e8e8;
 
     .content-2-heading {
         font-family: SourceSansPro;
@@ -59,7 +62,6 @@
     background-image: url('../../assets/img/group.png');
     background-size: cover;
     background-size: 100% 100%;
-    // min-height: 500px;
 
     .content-3-heading {
         font-family: SourceSansPro;
@@ -93,5 +95,25 @@
         font-size: 30px;
         line-height: 1.27;
         color: #ffffff;
+    }
+}
+
+.content-4 {
+    margin: 25px 0;
+    border-bottom: solid 1px #e8e8e8;
+
+    .content-4-heading {
+        font-family: SourceSansPro;
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 0.95;
+        color: #0040d5;
+        text-align: center;
+    }
+
+    img {
+        width: 300px;
+        height: 250px;
+        object-fit: contain;
     }
 }

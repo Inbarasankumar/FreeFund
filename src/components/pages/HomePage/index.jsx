@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../common/Header';
-import { Row, Col } from 'antd';
+import { Row, Col, Carousel } from 'antd';
 import { AppstoreFilled } from '@ant-design/icons';
 import Images from '../../assets/images';
 import './homePage.scss';
@@ -9,7 +8,6 @@ class HomePage extends Component {
     render() {
         return(
             <>
-                <Header />
                 <Row className="content-1">
                     <Col span={12} offset={6} >
                     <h1 className="content-1-heading">Get Fund, Build and Go Live</h1>
@@ -58,6 +56,40 @@ class HomePage extends Component {
                                         <span className="content-3-icon-text">Go live</span>
                                     </li>
                                 </ul>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+                <Row className="content-4" justify="center">
+                    <Col span={24} >
+                        <h1 className="content-4-heading">Ready to Get started?</h1>
+                    </Col>
+                </Row>
+                <Row className="content-4">
+                    <Col span={24} >
+                        <h1 className="content-4-heading">Hear from our customers</h1>
+                        <Row align="middle">
+                            <Col offset={2} span={8}>
+                                <img src={Images.customerPic} alt="customer"/>
+                            </Col>
+                            <Col span={7}>
+                                <Carousel>
+                                    <div>
+                                        <p>
+                                            Lean startup metrics venture innovator assets angel 
+                                            investor learning curve incubator branding advisor
+                                            termsheet. iPad ecosystem conversion android advisor.
+                                            Incubator vesting period metrics crowdfunding backing 
+                                            interaction design business model canvas strategy.
+                                        </p>
+                                        <p>
+                                            Rachel Trace
+                                        </p>
+                                        <p>
+                                        CTO, InnovationLabs
+                                        </p>
+                                    </div>
+                                </Carousel>
                             </Col>
                         </Row>
                     </Col>

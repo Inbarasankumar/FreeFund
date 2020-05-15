@@ -6,7 +6,7 @@ import 'antd/dist/antd.css';
 import Wrapper from './wrapper/wrapper';
 
 ReactDOM.render(
-   <Wrapper></Wrapper>,
+   <Wrapper />,
   document.getElementById('root')
 );
 
