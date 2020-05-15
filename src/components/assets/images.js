@@ -6,7 +6,11 @@ const images = {
     uidev: require('./img/ui-dev.png'),
     ui: require('./img/ui.png'),
     quality: require('./img/quality.png'),
-    customerPic: require('./img/the-gifted-amy-acker-02.png')
+    customerPic: require('./img/the-gifted-amy-acker-02.png'),
+    code: require('./img/laptop-code.jpg'),
+    map: require('./img/mobile-map.png'),
+    music: require('./img/music.png'),
+    system: require('./img/music-system.png')
 };
 
 export default images;
