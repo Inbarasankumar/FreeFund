@@ -13,14 +13,21 @@ class Overview extends Component{
         subTitle:'',
         category:'',
         location :'',
-        Deadline : null
-    }
+        Deadline : null,
+        nextStep : 0,
+        disable : false,
+            }
     onChange = (date,dateString) =>{
        
             console.log(date, dateString);
         }
 
-    handleOnClick = () =>{
+       
+    handleOnClick = (e) =>{
+        console.log('handle click state')
+        this.setState({nextStep:1 , disable:true});
+        this.props.history.push('/funding');
+        //this.setState({disable:true})
         console.log(this.state)
     }
     handleOnChange=(e)=>{
@@ -31,7 +38,7 @@ class Overview extends Component{
     render(){
         return(
                   <> 
-                  <StepsHeader></StepsHeader>   
+                  <StepsHeader nextStep={this.state.nextStep}></StepsHeader>   
                   <div className="content">
             <Row>
                 <Col span={8} offset={8}>
@@ -40,7 +47,7 @@ class Overview extends Component{
                   <div className="water-text">65% projects are highly funded by this content</div>
                 </Col>
                 <Col span={8} >
-                <Button onClick={this.handleOnClick}>Next:Funding</Button>
+                <Button type="primary" disabled={this.state.disable} onClick={()=>this.handleOnClick()}>Next:Funding</Button>
                    
                 </Col>
             </Row>
