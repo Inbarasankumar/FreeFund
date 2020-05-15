@@ -4,7 +4,7 @@ import './description.scss';
 
 const Description = ({displayPic}) => (
     <>
-        <Row className="content">
+        <Row className="content-description">
             <Col span={12}>
                 <img src={displayPic} alt="laptop" width={170} height={100}/>
             </Col>
