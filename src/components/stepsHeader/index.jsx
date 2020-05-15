@@ -67,10 +67,10 @@ class StepsHeader extends React.Component {
   }
 
   render() {
-    const { current } = this.state;
+   
     return (
       <div className="rectangle">
-        <Steps current={current} >
+        <Steps current={this.props.nextStep} >
           {steps.map(item => (
             <Step key={item.title} title={item.title}/>
           ))}

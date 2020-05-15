@@ -6,7 +6,7 @@ import Under from '../../assets/Under Construction.png';
 
 class Promotions extends Component {
     state={
-        nextStep : 0,
+        nextStep : 4,
         disable : false,
     }
     handleOnClick = () =>{

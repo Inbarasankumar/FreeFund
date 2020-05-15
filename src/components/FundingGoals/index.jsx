@@ -8,14 +8,16 @@ class FundingGoals extends Component{
 
     state={
         amount: 0,
-        nextStep : 0,
+        nextStep : 1,
         disable : false,
     }
   
     handleOnClick = () =>{
-        this.setState((state,props)=>({nextStep:state.nextStep+1 , disable:true}));
+        
+        // this.setState((state,props)=>({nextStep:state.nextStep+1 , disable:true}),() => {
+        //     this.props.history.push('/perks');});
+        console.log(this.state);
         this.props.history.push('/perks');
-        console.log(this.state)
     }
     handleOnChange=(e)=>{
         this.setState({
@@ -23,6 +25,7 @@ class FundingGoals extends Component{
         });
     }
     render(){
+        
         return(
                   <> 
                   <StepsHeader nextStep={this.state.nextStep}></StepsHeader>   
@@ -64,7 +67,7 @@ the gist of your project.</label>
                     <label>Freefund fee: 5%</label>
                     </Col>
                     <Col span={3} offset={4}>
-                    <label>$ 100</label>
+                    <label style={{fontSize:'18px'}}>$ 100</label>
                     </Col>
                     </Row>
                 </Col>
@@ -79,7 +82,7 @@ the gist of your project.</label>
                     <label>Processing fee: 2%</label>
                     </Col>
                     <Col span={3} offset={4}>
-                    <label>$ 100</label>
+                    <label style={{fontSize:'18px'}}>$ 100</label>
                     </Col>
                     </Row>
                 </Col>
@@ -91,10 +94,10 @@ the gist of your project.</label>
                 <Col span={10} offset={4} >
                 <Row>
                         <Col span={6}>
-                    <label>Total goal amount:</label>
+                    <label >Total goal amount:</label>
                     </Col>
                     <Col span={3} offset={4}>
-                    <label>$ 200</label>
+                    <label style={{color:'#3179ce',fontSize:'20px'}}>$ 200</label>
                     </Col>
                     </Row>
                 </Col>
