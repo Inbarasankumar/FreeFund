@@ -1,0 +1,60 @@
+ .content{
+    font-family: 'SourceSansPro';
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.74;
+    letter-spacing: normal;
+    text-align: left;
+    padding: 50px 40px;
+ }
+
+ .header{
+    font-size: 20px;
+    color: #000000;
+ }
+ .water-text{
+    font-size: 16px;
+    line-height: 1.04;
+    color: rgba(0, 0, 0, 0.22);
+ }
+
+ .ant-row{
+     margin-bottom: 21px;
+ }
+
+ label{
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.73;
+  color: #000000;
+ }
+ input{
+    width: 500px;
+    height: 35px;
+    border-radius: 7px;
+    border: solid 1px rgba(74, 73, 73, 0.14);
+    background-color: #ffffff;
+ }
+ ::placeholder{
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 2;
+    color: rgba(0, 0, 0, 0.17);
+ }
+
+.ant-btn{
+    float: right;
+    background-color: #21ad5d !important;
+    color: white !important;
+}
+
+.ant-picker{
+    width: 500px;
+    height: 35px;
+    border-radius: 7px !important;
+    border: solid 1px rgba(74, 73, 73, 0.14);
+    background-color: #ffffff; 
+}
