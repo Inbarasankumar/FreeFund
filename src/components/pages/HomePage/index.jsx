@@ -1,11 +1,32 @@
 import React, {Component} from 'react';
-import {Row, Col, Carousel} from 'antd';
+import { Modal, Row, Col, Carousel} from 'antd';
 import {AppstoreFilled} from '@ant-design/icons';
 import Images from '../../assets/images';
 import './homePage.scss';
 import DetailsCard from '../../common/detailsCard';
+import LoginTab from '../LoginPage';
 
 class HomePage extends Component {
+    constructor(props) {
+        super(props);
+            this.state = {
+                isVisible: false
+            }
+    }
+
+    onButtonClick = () => {
+        console.log('clicked!!');
+        this.setState({
+            isVisible: true
+        })
+    }
+
+    handleCancel = () => {
+        this.setState({
+          isVisible: false,
+        });
+      };
+
     render() {
         return (
             <>
@@ -126,7 +147,7 @@ class HomePage extends Component {
                                     Lorem Ipsum has been the industry’s
                                     standard dummy text ever since the 1500s
                                 </p>
-                                <button className="select-button">Start Earning</button>
+                                <button onClick={this.onButtonClick} className="select-button">Start Earning</button>
                             </Col>
                             <Col span={6}>
                                 <h1 className="user-type-heading">Creators</h1>
@@ -137,7 +158,7 @@ class HomePage extends Component {
                                     Lorem Ipsum has been the industry’s
                                     standard dummy text ever since the 1500s
                                 </p>
-                                <button className="select-button">Post a project</button>
+                                <button onClick={this.onButtonClick} className="select-button">Post a project</button>
                             </Col>
                             <Col span={6}>
                                 <h1 className="user-type-heading">Backers</h1>
@@ -148,7 +169,7 @@ class HomePage extends Component {
                                     Lorem Ipsum has been the industry’s
                                     standard dummy text ever since the 1500s
                                 </p>
-                                <button className="select-button">Start Investing</button>
+                                <button onClick={this.onButtonClick} className="select-button">Start Investing</button>
                             </Col>
                         </Row>
                     </Col>
@@ -165,6 +186,21 @@ class HomePage extends Component {
                         </div>
                     </Col>
                 </Row>
+                (this.state.isVisible? (
+                    <div className="modal-display">
+                    <Modal
+                        closable={false}
+                        className="login-modal"
+                        centered={true}
+                        visible={this.state.isVisible}
+                        footer={null}
+                        onCancel={this.handleCancel}
+                    >
+                        <LoginTab />
+                    </Modal>
+                  </div>
+                ): null
+            )                
             </>
         );
     }
