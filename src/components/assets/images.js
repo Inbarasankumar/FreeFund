@@ -17,7 +17,13 @@ const images = {
     music: require('./img/music.png'),
     system: require('./img/music-system.png'),
     google: require('./img/google.png'),
-    facebook: require('./img/facebook.png')
+    facebook: require('./img/facebook.png'),
+    appdevelopment: require('./img/app-development.png'),
+    graphic: require('./img/graphic.png'),
+    computer: require('./img/computer.png'),
+    interfaceUi: require('./img/Interface.png'),
+    threeDesign: require('./img/3d-design.png'),
+    appdesign: require('./img/app design.svg')
 };
 
 export default images;

@@ -54,6 +54,31 @@
         line-height: 0.95;
         text-align: center;
         color: #0040d5;
+        text-decoration: underline;
+    }
+
+    .border-heading {
+          border: 1px solid gray;
+    }
+
+    .description-tag {
+        font-size: 10px;
+        text-align: center;
+        padding-left: 4px;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        margin: 5% 33%;
+    }
+
+    .heading-images {
+        font-family: SourceSansPro;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        color: #000000;
     }
 }
 

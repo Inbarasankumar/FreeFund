@@ -7,6 +7,10 @@
     color: #3ad3c1;
   }
 
+  .header-padding {
+    left: 40px;
+  }
+
   .header-link {
     font-family: SourceSansPro;
     font-size: 18px;
@@ -33,5 +37,6 @@
     line-height: 2.11;
     color: #ffffff;
     padding: 0 30px;
+    cursor: pointer;
   }
 }
