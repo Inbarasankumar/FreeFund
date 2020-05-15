@@ -1,15 +1,15 @@
 import { Row, Col } from 'antd';
-import React, { Component } from 'react';
-import { CopyFilled } from '@ant-design/icons';
+import React from 'react';
+import Images from '../../assets/images';
 import { Link } from 'react-router-dom';
 import './header.scss';
 
-class Header extends Component {
+class Header extends React.Component {
   render() {
       return (
         <Row className="header container-fluid" align="middle">
             <Col span={3}>
-                <CopyFilled className="logo" />
+            <img className="freefund" src={Images.freefundLogo} alt="freefundLogo"/>
                 <Link className="header-title">Freefund</Link>
                 </Col>
             <Col span={9}>
