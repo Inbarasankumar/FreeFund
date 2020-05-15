@@ -52,6 +52,10 @@ class StepsHeader extends React.Component {
     };
   }
 
+  componentWillReceiveProps(nextProps){
+    this.setState({current:nextProps.nextStep})
+  }
+
   next() {
     const current = this.state.current + 1;
     this.setState({ current });
@@ -68,7 +72,7 @@ class StepsHeader extends React.Component {
       <div className="rectangle">
         <Steps current={current} >
           {steps.map(item => (
-            <Step key={item.title} title={item.title}  onClick={()=>this.next()} />
+            <Step key={item.title} title={item.title}/>
           ))}
         </Steps>
         {/* <div className="steps-content">{steps[current].content}</div> */}

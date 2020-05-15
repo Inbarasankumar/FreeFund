@@ -18,7 +18,7 @@ class Header extends Component {
                 <Link className="header-link">Portfolio</Link>
             </Col>    
             <Col span={4} offset={8}>
-                <button className="header-button">Post a project</button>
+            <Link to={'/overview'}><button className="header-button" >Post a project</button></Link>
             </Col>         
         </Row>
       );
