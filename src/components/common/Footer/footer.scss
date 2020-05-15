@@ -1,0 +1,36 @@
+.footer {
+    background-color: #ffffff;
+    border-top: solid 1px #e8e8e8;
+
+    .footer-content {
+        margin: 10px;
+        
+        .copy-right {
+            font-family: SourceSansPro;
+            font-size: 18px;
+            line-height: 2.11;
+            color: #000000;
+        }
+    
+        .footer-list-header {
+            font-family: Eina03☞;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.9;
+            color: #000000;
+        }
+    
+        .footer-list-content {
+            font-family: SourceSansPro;
+            font-size: 18px;
+            line-height: 2.11;
+            color: #000000;
+        }
+    }
+}
+
+.footer-icons {
+    font-size: 35px;
+    color: black;
+    margin: 10px;
+}

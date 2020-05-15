@@ -3,6 +3,7 @@ import { Row, Col, Carousel } from 'antd';
 import { AppstoreFilled } from '@ant-design/icons';
 import Images from '../../assets/images';
 import './homePage.scss';
+import DetailsCard from '../../common/detailsCard';
 
 class HomePage extends Component {
     render() {
@@ -63,35 +64,53 @@ class HomePage extends Component {
                 <Row className="content-4" justify="center">
                     <Col span={24} >
                         <h1 className="content-4-heading">Ready to Get started?</h1>
-                    </Col>
-                </Row>
-                <Row className="content-4">
-                    <Col span={24} >
-                        <h1 className="content-4-heading">Hear from our customers</h1>
-                        <Row align="middle">
-                            <Col offset={2} span={8}>
-                                <img src={Images.customerPic} alt="customer"/>
+                        <Row className="user-type-list" justify="space-around">
+                            <Col span={6}>
+                                <h1 className="user-type-heading">Freelancer</h1>
+                                <img src={Images.editTools} alt="editTools" />
+                                <p>
+                                    Lorem Ipsum is simply dummy text
+                                    of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry’s 
+                                    standard dummy text ever since the 1500s
+                                </p>
+                                <button className="select-button">Start Earning</button>
                             </Col>
-                            <Col span={7}>
-                                <Carousel>
-                                    <div>
-                                        <p>
-                                            Lean startup metrics venture innovator assets angel 
-                                            investor learning curve incubator branding advisor
-                                            termsheet. iPad ecosystem conversion android advisor.
-                                            Incubator vesting period metrics crowdfunding backing 
-                                            interaction design business model canvas strategy.
-                                        </p>
-                                        <p>
-                                            Rachel Trace
-                                        </p>
-                                        <p>
-                                        CTO, InnovationLabs
-                                        </p>
-                                    </div>
-                                </Carousel>
+                            <Col span={6}>
+                                <h1 className="user-type-heading">Creators</h1>
+                                <img src={Images.location} alt="location" />
+                                <p>
+                                    Lorem Ipsum is simply dummy text
+                                    of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry’s 
+                                    standard dummy text ever since the 1500s
+                                </p>
+                                <button className="select-button">Post a project</button>
+                            </Col>
+                            <Col span={6}>
+                                <h1 className="user-type-heading">Backers</h1>
+                                <img src={Images.business} alt="business" />
+                                <p>
+                                    Lorem Ipsum is simply dummy text
+                                    of the printing and typesetting industry. 
+                                    Lorem Ipsum has been the industry’s 
+                                    standard dummy text ever since the 1500s
+                                </p>
+                                <button className="select-button">Start Investing</button>
                             </Col>
                         </Row>
+                    </Col>
+                </Row>
+                <Row className="content-5">
+                    <Col span={24} >
+                        <h1 className="content-5-heading">Hear from our customers</h1>
+                        <div className="carousel-view">
+                            <Carousel autoplay>
+                                <DetailsCard />
+                                <DetailsCard />
+                                <DetailsCard />
+                            </Carousel>
+                        </div>
                     </Col>
                 </Row>
             </>
