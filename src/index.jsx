@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-
+import 'antd/dist/antd.css';
 import Wrapper from './wrapper/wrapper';
 
 ReactDOM.render(
-   <Wrapper></Wrapper>,
+   <Wrapper />,
   document.getElementById('root')
 );
 
