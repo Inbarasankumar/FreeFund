@@ -1,0 +1,15 @@
+.loader {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    top: 45%;
+    left: 45%;
+    position: fixed;
+    vertical-align: text-bottom;
+    background-color: currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: spinner-grow .75s linear infinite;
+    animation: spinner-grow .75s linear infinite;
+  }
+  

@@ -4,8 +4,11 @@ import {} from '@ant-design/icons';
 import Images from '../../assets/images';
 import ProjectProposalCard from '../../common/ProjectProposalCard';
 import PerksDisplayCard from '../../common/PerksDisplayCard';
+import apiClient from '../../apiClient/apiClient';
+import LoadingIndicator from '../../common/Loader';
 import './projectDetails.scss';
 
+const projectId = 3;
 const proposalData = [
     {
         name: "John",
@@ -29,8 +32,34 @@ const proposalData = [
     },
 ]
 class ProjectDetails extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            allProjectList: [],
+            isLoading: true
+        }
+    }
+
+    componentDidMount() {
+        apiClient
+        .get('/api/v1/project/details/{projectId}', { params: {
+            projectId
+        } }).then(response => {
+            console.log(response);
+            return response;
+        })
+            .then(projectList => {
+                this.setState({
+                    allProjectList: projectList.data,
+                    isLoading: false
+                })
+            });
+    }
+
     render() {
+        console.log(this.state.allProjectList);
         return(
+            (!this.state.isLoading) ? (
             <div  className="project-details">
                 <Row>
                     <Col span={8} offset={2}>
@@ -42,8 +71,8 @@ class ProjectDetails extends React.Component {
                         <div>
                             <img src={Images.code} alt="laptop" width={400} height={250}/>
                             <Col span={24}>
-                                <span className="subtitle">Project subtitle</span>
-                                <span className="subtitle">Technology</span>
+                                <span className="subtitle">{this.state.allProjectList.projectOverview.subtitle}</span>
+                                <span className="subtitle">{this.state.allProjectList.projectOverview.category_name}</span>
                                 <span className="subtitle">Bangalore, India</span>
                                 <div className="description-under">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum has been the industry’s standard dummy text ever since the
@@ -91,6 +120,7 @@ class ProjectDetails extends React.Component {
                     </Col>
                 </Row>
             </div>
+            ): <LoadingIndicator />
         );
     }
 }
