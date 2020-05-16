@@ -1,0 +1,92 @@
+.perks-proposal-card {
+    *{
+        box-sizing: border-box;
+    }
+
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: solid 1px rgba(112, 112, 112, 0.24);
+    margin: 10px 0;
+
+    .perks-value {
+        margin: 10px;
+        text-align: center;
+        font-family: HelveticaNeue;
+        color: #000000;
+    }
+
+    .perks-description {
+        margin: 10px;
+        font-family: HelveticaNeue;
+        color: rgba(0, 0, 0, 0.66);
+        text-align: left;
+    }
+
+    .estimated-title {
+        font-family: HelveticaNeue;
+        text-align: left;
+        color: #000000;
+        margin: 10px;
+    }
+
+    .estimated-date {
+        font-family: HelveticaNeue;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.66);
+        margin: 10px;
+    }
+
+    .benefits {
+        font-family: HelveticaNeue;
+        text-align: left;
+        color: #000000;
+        margin: 10px;
+    }
+
+    .benefits-list {
+        .benefits-content {
+            font-family: HelveticaNeue;
+            text-align: left;
+            color: rgba(0, 0, 0, 0.66);
+        }
+    }
+
+    .backers-count {
+        font-family: HelveticaNeue;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.66);
+        margin: 10px;
+    }
+
+    .early-bid {
+        background-color: #3149ff;
+        color: #3149ff;
+    }
+
+    .premium {
+        background-color: #23ac5d;
+        color: #23ac5d;
+    }
+
+    .super-early-bid {
+        background-color: #f73c99;
+        color: #f73c99;
+    }
+
+    .buy-button {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border: solid 1px rgba(112, 112, 112, 0.24);
+        font-family: HelveticaNeue;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+    .perks-title {
+        margin: 10px;
+        text-align: center;
+        font-family: HelveticaNeue;
+        font-weight: bold;
+        background-color: white;
+    }
+}

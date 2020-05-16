@@ -6,3 +6,4 @@ export const FUNDING = "/funding";
 export const PERKS = '/perks';
 export const RECRUTING = '/recuriting';
 export const PROMOTIONS = '/promotions';
+export const PROJECT_DETAILS = '/projectdetails'

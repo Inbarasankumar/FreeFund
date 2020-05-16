@@ -1,0 +1,55 @@
+.project-details {
+    margin: 25px 0;
+  
+    .heading {
+      font-family: Eina03☞;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    img{
+        width: 600px;
+    }
+
+    .subtitle {
+        font-family: HelveticaNeue;
+        font-weight: bold;
+        color: #000000;
+        margin: 0 30px 0 0;
+    }
+  
+    .description-under {
+      margin-top: 10px;
+      font-family: HelveticaNeue;
+      color: #000000;
+    }
+
+    .funding-list {
+        margin: 15px 0;
+        
+        .fund-amount {
+            font-size: 30px;
+            line-height: 0.84;
+            font-family: HelveticaNeue;
+            font-weight: bold;
+            color: #3179ce;
+            margin: 0;
+        }
+    
+        .total-fund, .backers, .days-to-go {
+            font-size: 20px;
+            line-height: 1.27;
+            font-family: HelveticaNeue;
+            color: rgba(0, 0, 0, 0.22);
+        }
+    
+        .total-backers, .total-days {
+            font-family: HelveticaNeue;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 0.84;
+            color: #000000;
+            margin: 0;
+        }
+    }
+}
