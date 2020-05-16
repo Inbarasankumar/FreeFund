@@ -85,9 +85,9 @@ class ProjectDetails extends React.Component {
                         ))}
                     </Col>
                     <Col className="perks-list" span={6} offset={1}>
-                        <PerksDisplayCard title={"Early Bid"} className={"early-bid"} />
+                        <PerksDisplayCard title={"Early Bird"} className={"early-bird"} />
                         <PerksDisplayCard title={"Premium"} className={"premium"} />
-                        <PerksDisplayCard title={"Super Early Bid"} className={"super-early-bid"} />
+                        <PerksDisplayCard title={"Super Early Bird"} className={"super-early-bird"} />
                     </Col>
                 </Row>
             </div>

@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
-import Header from '../../common/Header';
 import {Row, Col} from 'antd';
-import {AppstoreFilled} from '@ant-design/icons';
 import Images from '../../assets/images';
 import './browseProject.scss';
 
-import HomePage from "../HomePage";
 import Description from "../../common/Description";
 import { Link } from 'react-router-dom';
 
@@ -17,7 +14,9 @@ class BrowseProject extends Component {
                     <Col span={8} offset={2}>
                         <h1 className="headings">Featured Project</h1>
                         <div>
+                        <Link to='/projectDetails'>
                             <img src={Images.code} alt="laptop" width={400} height={250}/>
+                        </Link>
                             <Col span={24}>
                                 <div className="description-under">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum has been the industry’s standard dummy text ever since the
@@ -32,8 +31,7 @@ class BrowseProject extends Component {
                         <h1 className="headings">Recently Incubated </h1>
                         <Link to='/projectDetails'>
                             <div><Description displayPic={Images.map}/></div>
-                        </Link>  
-                        {/* <div><Description displayPic={Images.map}/></div> */}
+                        </Link>
                         <div><Description displayPic={Images.music}/></div>
                         <div><Description displayPic={Images.system}/></div>
                     </Col>
