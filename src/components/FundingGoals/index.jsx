@@ -46,7 +46,7 @@ class FundingGoals extends Component{
 the gist of your project.</label>
                 </Col>
                 <Col span={10} offset={4} >
-                    <label>Global About</label>
+                    <label>Goal Amount</label>
                     <Row>
                     <Col span={3}>
                     <input style={{width:'35px'}} type="text" placeholder=" USD "></input>
