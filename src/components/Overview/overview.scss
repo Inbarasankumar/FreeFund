@@ -36,6 +36,7 @@
     border-radius: 7px;
     border: solid 1px rgba(74, 73, 73, 0.14);
     background-color: #ffffff;
+    text-align: "center"
  }
  ::placeholder{
     font-family: HelveticaNeue;
@@ -57,4 +58,12 @@
     border-radius: 7px !important;
     border: solid 1px rgba(74, 73, 73, 0.14);
     background-color: #ffffff; 
+}
+
+.ant-select{
+   width: 500px;
+    height: 35px;
+    border-radius: 7px;
+   
+    background-color: #ffffff;
 }

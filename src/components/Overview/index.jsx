@@ -1,11 +1,13 @@
 import React from 'react';
 import { Component } from 'react';
-import { Row , Col , DatePicker ,Button } from 'antd';
+import { Row , Col , DatePicker ,Button, Select } from 'antd';
 
 import StepsHeader from '../stepsHeader';
 import '../Overview/overview.scss';
 import Pencil from '../../assets/Pencil-icon.png';
+import apiClient from '../apiClient/apiClient';
 
+const {Option} = Select;
 class Overview extends Component{
 
     state={
@@ -13,15 +15,21 @@ class Overview extends Component{
         subTitle:'',
         category:'',
         location :'',
-        Deadline : null,
+        Deadline : '',
         nextStep : 0,
         disable : false,
+        categoryArray:[]
             }
     onChange = (date,dateString) =>{
        
             console.log(date, dateString);
+            this.setState({Deadline:dateString})
         }
 
+       async componentDidMount(){
+        const resp = await apiClient.get('/api/v1/category');
+        this.setState({categoryArray:resp.data});
+        }
        
     handleOnClick = () =>{
         
@@ -29,7 +37,16 @@ class Overview extends Component{
         // this.setState(state=>{ return {
         //     nextStep:state.nextStep+1 , disable:true}},() => {
         //     this.props.history.push('/funding');});
-        this.props.history.push('/funding');
+       
+        const requestObject = {
+            categoryId: this.state.category,
+            fundingGoal: 0,
+            location: this.state.location,
+            projectDeadline: this.state.Deadline,
+            title: this.state.title,
+            subtitle: this.state.subTitle
+        }
+        this.props.history.push('/funding',{response:requestObject});
         //this.setState({disable:true})
        
     }
@@ -38,7 +55,12 @@ class Overview extends Component{
             [e.target.name]: e.target.value
         });
     }
+    OnSelectionChange=(e) => {
+console.log(e);
+this.setState({category:e})
+    }
     render(){
+      
         return(
                   <> 
                   <StepsHeader nextStep={this.state.nextStep}></StepsHeader>   
@@ -81,7 +103,13 @@ the gist of your project.</label>
                 </Col>
                 <Col span={10} offset={4} >
                     <label>Category</label>
-                    <input type="text" name="category" placeholder=" Technology" value={this.state.category} onChange={this.handleOnChange}></input>
+                    <Select placeholder=" Technology" onChange={(e)=>this.OnSelectionChange(e)}>
+                        {this.state.categoryArray.map((category)=>{
+                           return <Option key={category.categoryId}  value={category.categoryId}>{category.categoryName}</Option>
+                        })}
+                        
+                    </Select>
+                   
                 </Col>
                 </Row>
                 <Row >
@@ -91,7 +119,7 @@ the gist of your project.</label>
                 </Col>
                 <Col span={10} offset={4} >
                     <label>Location</label>
-                    <input type="text" name="location" placeholder=" Bengaluru, India"value={this.state.location} onChange={this.handleOnChange}></input>
+                    <input type="" name="location" placeholder=" Bengaluru, India"value={this.state.location} onChange={this.handleOnChange}></input>
                 </Col>
                 </Row>
                 <Row >
@@ -101,7 +129,7 @@ the gist of your project.</label>
                 </Col>
                 <Col span={10} offset={4} >
                     <label>Deadline</label>
-                    <DatePicker onChange={(date, dateString)=>this.onChange(date,dateString)} />
+                    <DatePicker  onChange={(date, dateString)=>this.onChange(date,dateString)} />
                 </Col>
                 </Row>
                 </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import {Row, Col , Button , DatePicker , Card} from 'antd';
 import StepsHeader from '../stepsHeader';
+import apiClient from '../apiClient/apiClient';
 import './perks.scss';
 
 class Perks extends Component {
@@ -23,7 +24,8 @@ class Perks extends Component {
     handleOnClick = () =>{
         // this.setState((state,props)=>({nextStep:state.nextStep+1 , disable:true}),() => {
         //     this.props.history.push('/recruiting');});
-            this.props.history.push('/recruiting');
+        const projectId = this.props.location.state.response.projectId;
+            this.props.history.push('/recruiting',{response:projectId});
         console.log(this.state)
     }
     handleOnChange=(e)=>{
@@ -33,7 +35,7 @@ class Perks extends Component {
     }
 
     handleOnClickNew= async () =>{   
-
+        
         const perkObj = {
             perkTitle:this.state.perkTitle,
             perkDescription:this.state.perkDescription,
@@ -41,8 +43,18 @@ class Perks extends Component {
             , benefits:this.state.benefits , 
             delivery:this.state.delivery}
         //const newObj = Object.create(perkObj);
+        const requestObj = {
+            benefit:this.state.benefits,
+            description:this.state.perkDescription,
+            estimatedDelivery:this.state.delivery,
+            pledgedAmount:this.state.amount,
+            projectId:this.props.location.state.response.projectId,
+            title : this.state.perkTitle
+        }
+        const JsonObj = JSON.stringify(requestObj);
         console.log(perkObj);
-
+        const respon= await apiClient.post("/iam/api/v1/perks",JsonObj);
+        console.log(respon)
         await this.setState({perks:[...this.state.perks,perkObj]})
         this.setState({perkTitle:'',perkDescription:'',amount:'',benefits:'',delivery:''})
         console.log(this.state)

@@ -3,29 +3,39 @@ import{Row , Col , Button} from 'antd';
 
 import  './fundingGoals.scss';
 import StepsHeader from '../stepsHeader';
-
+import apiClient from '../apiClient/apiClient';
 class FundingGoals extends Component{
 
     state={
         amount: 0,
         nextStep : 1,
         disable : false,
+        projectId:0
     }
   
-    handleOnClick = () =>{
+     handleOnClick = async () =>{
         
         // this.setState((state,props)=>({nextStep:state.nextStep+1 , disable:true}),() => {
         //     this.props.history.push('/perks');});
         console.log(this.state);
-        this.props.history.push('/perks');
+        const calcTotalAmount = +this.state.amount + +(this.state.amount/100)*2 + +(this.state.amount/100)*5;
+        console.log(calcTotalAmount);
+        const overviewObj = this.props.location.state.response;
+        const requestObj = {...overviewObj,fundingGoal:calcTotalAmount}
+        const JsonObj = JSON.stringify(requestObj);
+        console.log(JSON.stringify(requestObj))
+         const res= await apiClient.post('/api/v1/project/projects',JsonObj);
+         console.log(res);
+       this.props.history.push('/perks',{response:res.data});
     }
     handleOnChange=(e)=>{
         this.setState({
             [e.target.name]: e.target.value
         });
     }
+   
     render(){
-        
+        console.log(this.props.location)
         return(
                   <> 
                   <StepsHeader nextStep={this.state.nextStep}></StepsHeader>   
@@ -67,7 +77,7 @@ the gist of your project.</label>
                     <label>Freefund fee: 5%</label>
                     </Col>
                     <Col span={3} offset={4}>
-                    <label style={{fontSize:'18px'}}>$ 100</label>
+        <label style={{fontSize:'18px'}}>$ {(this.state.amount/100)*5}</label>
                     </Col>
                     </Row>
                 </Col>
@@ -82,7 +92,7 @@ the gist of your project.</label>
                     <label>Processing fee: 2%</label>
                     </Col>
                     <Col span={3} offset={4}>
-                    <label style={{fontSize:'18px'}}>$ 100</label>
+                    <label style={{fontSize:'18px'}}>$ {(this.state.amount/100)*2}</label>
                     </Col>
                     </Row>
                 </Col>
@@ -97,7 +107,7 @@ the gist of your project.</label>
                     <label >Total goal amount:</label>
                     </Col>
                     <Col span={3} offset={4}>
-                    <label style={{color:'#3179ce',fontSize:'20px'}}>$ 200</label>
+                    <label  style={{color:'#3179ce',fontSize:'20px'}}>$ { +this.state.amount + +(this.state.amount/100)*2 + +(this.state.amount/100)*5}</label>
                     </Col>
                     </Row>
                 </Col>

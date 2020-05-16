@@ -2,20 +2,34 @@ import React, {Component} from 'react';
 
 import {Row, Col, Button} from 'antd';
 import StepsHeader from '../stepsHeader';
-import Under from '../../assets/Under Construction.png';
 
+import apiClient from '../apiClient/apiClient';
 class Recruiting extends Component {
     state={
         nextStep : 3,
         disable : false,
+        freelancerCount:0,
+        budget:0
     }
-    handleOnClick = () =>{
+    handleOnClick = async () =>{
         // this.setState((state,props)=>({nextStep:state.nextStep+1 , disable:true}),() => {
         //     this.props.history.push('/promotions');});
+        const requestObj = {
+            budget:this.state.budget,
+            freelancerCount:this.state.freelancerCount,
+            projectId: this.props.location.state.response
+        }
+        const JsonObj = JSON.stringify(requestObj);
+        const res = await apiClient.put("/api/v1/project/projects",JsonObj);
+        console.log(res);
         this.props.history.push('/promotions');
         console.log(this.state)
     }
-
+    handleOnChange=(e)=>{
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
     render() {
         return (
             <>
@@ -42,9 +56,9 @@ class Recruiting extends Component {
                             <label>Total Budget For Project</label>
                             <Row>
                                 <Col span={6}>
-                                    <input type="text" name="amount" style={{textAlign: "center"}}
+                                    <input type="text" name="budget" style={{textAlign: "center"}}
                                            placeholder="Freefund : Projects get incubated here"
-                                           value={this.state.amount} onChange={this.handleOnChange}></input>
+                                           value={this.state.budget} onChange={this.handleOnChange}></input>
                                 </Col>
                             </Row>
                         </Col>
@@ -60,9 +74,9 @@ class Recruiting extends Component {
                             <label>Count</label>
                             <Row>
                                 <Col span={6}>
-                                    <input type="text" name="amount"
+                                    <input type="text" name="freelancerCount"
                                            placeholder="Technology" style={{textAlign: "center"}}
-                                           value={this.state.amount} onChange={this.handleOnChange}></input>
+                                           value={this.state.freelancerCount} onChange={this.handleOnChange}></input>
                                 </Col>
                             </Row>
                         </Col>
