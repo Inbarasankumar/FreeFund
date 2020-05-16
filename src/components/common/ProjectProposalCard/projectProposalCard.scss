@@ -1,0 +1,42 @@
+.project-proposal-card {
+    *{
+        box-sizing: border-box;
+    }
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin: 10px 0;
+
+    .avatar-image {
+        margin: 5px 0;
+    }
+
+    .avatar-name, .reviews {
+        font-family: HelveticaNeue;
+        font-weight: bold;
+        color: #000000;
+        margin: 0;
+    }
+
+    .avatar-description {
+        font-family: HelveticaNeue;
+        color: #000000;
+        white-space: pre-wrap;
+    }
+
+    .chat-button {
+        padding: 5px 25px;
+        border: solid 1px #636cd9;
+        background-color: #ffffff;
+        margin: 10px;
+        font-family: HelveticaNeue;
+        color: #636cd9;
+    }
+    .award-button {
+        padding: 5px 25px;
+        background-color: #4fb55d;
+        border: none;
+        margin: 10px;
+        font-family: HelveticaNeue;
+        color: #ffffff;
+    }
+}

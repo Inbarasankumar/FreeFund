@@ -16,7 +16,7 @@ class Header extends React.Component {
             <Col span={9}>
                 <Link to={'/browseprojects'} className="header-link">Browse projects</Link>
                 <Link to={'/myprojects'} className="header-link">My Projects</Link>
-                <Link className="header-link">Portfolio</Link>
+                <Link to={'/home'} className="header-link">Portfolio</Link>
             </Col>    
             <Col span={4} offset={8}>
             <Link to={'/overview'}><button className="header-button" >Post a project</button></Link>

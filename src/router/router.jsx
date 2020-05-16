@@ -9,6 +9,7 @@ import Funding from '../components/FundingGoals';
 import Perks from '../components/Perks';
 import Recruiting from '../components/Recruiting';
 import Promotions from '../components/Promotions';
+import ProjectDetails from '../components/pages/ProjectDetails';
 
 class AppRouter extends Component{
     componentDidUpdate(nextProps) {
@@ -29,7 +30,7 @@ class AppRouter extends Component{
                 <Route exact path ="/perks" component={Perks}></Route> 
                 <Route exact path= "/recruiting" component={Recruiting}></Route>
                 <Route exact path ="/promotions" component={Promotions}></Route> 
-                
+                <Route exact path={path.PROJECT_DETAILS} component={ProjectDetails}></Route>
             </Switch>
         )
     }

@@ -36,20 +36,20 @@ const Footer = () => (
             </Col>   
             <Col span={4}>
                 <h1 className="footer-list-header">Services</h1>
-                {servicesData.map((list) => (
-                    <p className="footer-list-content">{list}</p>
+                {servicesData.map((list, _index) => (
+                    <p key={`services - ${_index}`} className="footer-list-content">{list}</p>
                 ))}
             </Col>
             <Col span={4}>
                 <h1 className="footer-list-header">About Us</h1>
-                {aboutData.map((list) => (
-                    <p className="footer-list-content">{list}</p>
+                {aboutData.map((list, _index) => (
+                    <p key={`about - ${_index}`} className="footer-list-content">{list}</p>
                 ))}
             </Col>  
             <Col span={4}>
                 <h1 className="footer-list-header">Blog</h1>
-                {blogData.map((list) => (
-                    <p className="footer-list-content">{list}</p>
+                {blogData.map((list, _index) => (
+                    <p key={`blog - ${_index}`} className="footer-list-content">{list}</p>
                 ))}
             </Col>  
         </Row>

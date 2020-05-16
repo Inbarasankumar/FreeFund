@@ -108,7 +108,7 @@ class HomePage extends Component {
                                 <AppstoreFilled className="store-icon"/>
                             </Col>
                             <Col span={12}>
-                                <ul style={{"list-style-type": "none"}}>
+                                <ul style={{"listStyleType": "none"}}>
                                     <li>
                                         <img className="content-3-icon" src={Images.gather} alt="gather"/>
                                         <span className="content-3-icon-text">Post a job</span>
