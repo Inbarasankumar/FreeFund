@@ -14,7 +14,9 @@ class BrowseProject extends Component {
                     <Col span={8} offset={2}>
                         <h1 className="headings">Featured Project</h1>
                         <div>
+                        <Link to='/projectDetails'>
                             <img src={Images.code} alt="laptop" width={400} height={250}/>
+                        </Link>
                             <Col span={24}>
                                 <div className="description-under">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                     Ipsum has been the industry’s standard dummy text ever since the
