@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
-import Header from '../../common/Header';
 import {Row, Col} from 'antd';
-import {AppstoreFilled} from '@ant-design/icons';
 import Images from '../../assets/images';
 import './browseProject.scss';
 
-import HomePage from "../HomePage";
 import Description from "../../common/Description";
 import { Link } from 'react-router-dom';
 
@@ -32,8 +29,7 @@ class BrowseProject extends Component {
                         <h1 className="headings">Recently Incubated </h1>
                         <Link to='/projectDetails'>
                             <div><Description displayPic={Images.map}/></div>
-                        </Link>  
-                        {/* <div><Description displayPic={Images.map}/></div> */}
+                        </Link>
                         <div><Description displayPic={Images.music}/></div>
                         <div><Description displayPic={Images.system}/></div>
                     </Col>
