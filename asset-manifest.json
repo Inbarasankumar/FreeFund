@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.43f086db.chunk.css",
+    "main.js": "/static/js/main.a064ef7c.chunk.js",
+    "main.js.map": "/static/js/main.a064ef7c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.72a55ad9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.72a55ad9.js.map",
+    "static/css/2.d7262850.chunk.css": "/static/css/2.d7262850.chunk.css",
+    "static/js/2.f2da3d4a.chunk.js": "/static/js/2.f2da3d4a.chunk.js",
+    "static/js/2.f2da3d4a.chunk.js.map": "/static/js/2.f2da3d4a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3ec2584e7be0757af85955b7d4cb252c.js": "/precache-manifest.3ec2584e7be0757af85955b7d4cb252c.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d7262850.chunk.css.map": "/static/css/2.d7262850.chunk.css.map",
+    "static/css/main.43f086db.chunk.css.map": "/static/css/main.43f086db.chunk.css.map",
+    "static/js/2.f2da3d4a.chunk.js.LICENSE.txt": "/static/js/2.f2da3d4a.chunk.js.LICENSE.txt",
+    "static/media/Interface.png": "/static/media/Interface.b9852402.png",
+    "static/media/Under Construction.png": "/static/media/Under Construction.69deada1.png",
+    "static/media/app design.svg": "/static/media/app design.b53e0e29.svg",
+    "static/media/app-development.png": "/static/media/app-development.4c7792bb.png",
+    "static/media/computer.png": "/static/media/computer.b8580f67.png",
+    "static/media/freefundLogo.svg": "/static/media/freefundLogo.056e52c3.svg",
+    "static/media/graphic.png": "/static/media/graphic.d26d80da.png",
+    "static/media/homePage.scss": "/static/media/group.69570fe4.png",
+    "static/media/homePageLaptop.jpg": "/static/media/homePageLaptop.1ccca66f.jpg",
+    "static/media/laptop-code.jpg": "/static/media/laptop-code.8bc572ff.jpg",
+    "static/media/mobile-map.png": "/static/media/mobile-map.fad49bae.png",
+    "static/media/music-system.png": "/static/media/music-system.aa1f481c.png",
+    "static/media/music.png": "/static/media/music.f09e5e94.png",
+    "static/media/the-gifted-amy-acker-02.png": "/static/media/the-gifted-amy-acker-02.5b681c69.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72a55ad9.js",
+    "static/css/2.d7262850.chunk.css",
+    "static/js/2.f2da3d4a.chunk.js",
+    "static/css/main.43f086db.chunk.css",
+    "static/js/main.a064ef7c.chunk.js"
+  ]
+}
